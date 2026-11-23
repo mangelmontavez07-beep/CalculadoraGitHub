@@ -13,6 +13,8 @@ public class Calculadora {
 		System.out.println("2 elevado a 3: " + potencia(2, 3));
         System.out.println("5 elevado a 0: " + potencia(5, 0));
         System.out.println("2 elevado a -2: " + potencia(2, -2));
+        System.out.println("¿Es 4 par?: " + esPar(4));
+        System.out.println("¿Es 7 par?: " + esPar(7));
 	}
 
 	public static double sumar(double a, double b) {
@@ -47,5 +49,9 @@ public class Calculadora {
             return 1.0 / resultado;
         }
         return resultado;
+    }
+    
+    public static boolean esPar(int numero) {
+        return numero % 2 == 0;
     }
 }
